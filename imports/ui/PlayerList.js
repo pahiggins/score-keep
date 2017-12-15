@@ -1,6 +1,7 @@
 import React from 'react';
 import Player from './Player';
 import FlipMove from 'react-flip-move';
+import PropTypes from 'prop-types';
 
 export default class PlayerList extends React.Component {
   renderPlayers() {
@@ -28,6 +29,6 @@ export default class PlayerList extends React.Component {
   }
 };
 
-// PlayerList.propTypes = {
-//   players: PropTypes.array.isRequired
-// };
+PlayerList.propTypes = {
+  players: PropTypes.array.isRequired
+};

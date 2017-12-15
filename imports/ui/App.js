@@ -2,6 +2,7 @@ import React from 'react';
 import TitleBar from './TitleBar';
 import AddPlayer from './AddPlayer';
 import PlayerList from './PlayerList';
+import PropTypes from 'prop-types';
 
 export default class App extends React.Component {
   render() {
@@ -17,7 +18,7 @@ export default class App extends React.Component {
   }
 };
 
-// App.propTypes = {
-//   title: PropTypes.string.isRequired,
-//   players: PropTypes.array.isRequired
-// }
+App.propTypes = {
+  title: PropTypes.string.isRequired,
+  players: PropTypes.array.isRequired
+}
